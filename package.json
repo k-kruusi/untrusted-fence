@@ -1,0 +1,31 @@
+{
+  "name": "@agentruntime/untrusted-fence",
+  "version": "0.1.0",
+  "description": "Pure, dependency-free untrusted-data fence: wrap third-party content in a nonce-keyed <untrusted-{nonce}> envelope with a treat-as-DATA-never-instructions header, and scan/neutralize boundary-forgery attempts. Shared by quarantine and web-fetch-server.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "!dist/__tests__",
+    "!dist/**/*.js.map"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-kruusi/claude-supervisor.git",
+    "directory": "dependencies/untrusted-fence"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
